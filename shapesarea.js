@@ -50,11 +50,15 @@ class Square extends Figura {
       this.height = options.height;
     }
     getArea() {
-      area = Math.pow(this.width,2) 
+      var area = Math.pow(this.width,2) 
       return area; 
     }
 }
 
-let a = new Triangle({ width: 100, height: 100 });
-let s = a.getArea();
-console.log(s);
+module.exports = {
+  Figura,
+  Triangle,
+  Rectangle,
+  Square
+};
+
